@@ -64,7 +64,7 @@
     echo ("La suma de todas las variables es: " . ($x + $y + $n + $m)) . "\n";
 
     //Producto de todas las variables
-    echo ("El producto de todas las variables es: " . ($x * $y * $n * $m)) . "\n";
+    echo ("El producto de todas las variables es: " . ($x * $y * $n * $m)) . "\n\n";
 
     //Función calculadora
     function calculadora($x, $y, $operacio)
@@ -88,6 +88,26 @@
         return $resultat;
 
     }
+    // Uso de la función calculadora
+    // Suma
+    $x = 10;
+    $y = 5;
+    $operacio = 'suma';
+    $resultat = calculadora($x, $y, $operacio);
+    echo "El resultado de la operación $operacio entre $x y $y es: $resultat\n";
+    // Resta
+    $operacio = 'resta';   
+    $resultat = calculadora($x, $y, $operacio);
+    echo "El resultado de la operación $operacio entre $x y $y es: $resultat\n";
+    // Multiplicación
+    $operacio = 'multiplicación';
+    $resultat = calculadora($x, $y, $operacio);
+    echo "El resultado de la operación $operacio entre $x y $y es: $resultat\n";
+    // División
+    $operacio = 'división';
+    $resultat = calculadora($x, $y, $operacio);
+    echo "El resultado de la operación $operacio entre $x y $y es: $resultat\n";
+
 
     ?>
 </body>
